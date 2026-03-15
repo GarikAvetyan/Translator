@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="purple_primary">#6A3DBD</color>
+    <color name="purple_dark">#4B2A86</color>
+    <color name="purple_light">#E7D7FF</color>
+    <color name="yellow_accent">#F5B21A</color>
+    <color name="yellow_dark">#B8780D</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#F4F2F8</color>
+    <color name="background_light">#F7F5FB</color>
+    <color name="on_surface_light">#1F1A2B</color>
+    <color name="on_surface_variant_light">#6D667A</color>
+    <color name="outline_light">#E3DEEC</color>
+    <color name="surface_dark">#131019</color>
+    <color name="surface_variant_dark">#1C1824</color>
+    <color name="background_dark">#0E0B13</color>
+    <color name="on_surface_dark">#EAE6F2</color>
+    <color name="on_surface_variant_dark">#CFC9DA</color>
+    <color name="outline_dark">#4C445A</color>
+    <color name="camera_pink">#E650C3</color>
+    <color name="ripple_white_35">#59FFFFFF</color>
+</resources>

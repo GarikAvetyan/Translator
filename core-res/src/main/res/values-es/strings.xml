@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Traductor</string>
+    <string name="translator_title">Traductor</string>
+    <string name="translate_action">Traducir</string>
+    <string name="input_label">Tu texto</string>
+    <string name="input_hint">Toca para escribir un texto</string>
+    <string name="output_label">Traducción</string>
+    <string name="output_placeholder">La traducción aparecerá aquí</string>
+    <string name="translating">Traduciendo…</string>
+    <string name="clear_action">Borrar</string>
+    <string name="copy">Copiar</string>
+    <string name="from_language">De</string>
+    <string name="to_language">A</string>
+    <string name="swap_languages">Intercambiar idiomas</string>
+    <string name="settings">Ajustes</string>
+    <string name="bottom_nav_translator">Traductor</string>
+    <string name="bottom_nav_learn">Aprender español</string>
+    <string name="bottom_nav_phrasebook">Frases</string>
+    <string name="voice">Voz</string>
+    <string name="camera">Cámara</string>
+    <string name="paste">Pegar</string>
+    <string name="keyboard">Teclado</string>
+    <string name="favorite">Favorito</string>
+    <string name="coins_format">%1$d monedas</string>
+    <string name="language_english">Inglés</string>
+    <string name="language_spanish">Español</string>
+    <string name="error_empty_input">Escribe un texto para traducir</string>
+    <string name="error_translation_failed">No se puede traducir en este momento</string>
+    <string name="feature_not_available">Esta función no está disponible en esta demo</string>
+</resources>
