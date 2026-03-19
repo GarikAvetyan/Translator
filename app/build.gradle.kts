@@ -18,6 +18,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "TRANSLATE_API_KEY", "\"PRDHPCP-FNE499G-KWSSCW1-T1RRTZY\"")
+        buildConfigField("String", "TRANSLATE_BASE_URL", "\"https://api.lecto.ai/\"")
     }
 
     buildTypes {
@@ -35,11 +38,13 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
     implementation(project(":core-res"))
+    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.runtime.compose)

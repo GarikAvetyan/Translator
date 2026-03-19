@@ -1,5 +1,7 @@
 package app.translator.presentation.navigation
 
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -7,13 +9,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import androidx.hilt.navigation.compose.hiltViewModel
-import app.translator.presentation.learn.LearnModuleScreen
-import app.translator.presentation.learn.LearnSpanishScreen
-import app.translator.presentation.phrasebook.PhrasebookCategoryScreen
-import app.translator.presentation.phrasebook.PhrasebookScreen
-import app.translator.presentation.settings.SettingsScreen
-import app.translator.presentation.translator.TranslatorScreen
-import app.translator.presentation.translator.components.BottomNavItem
+import app.translator.presentation.learn.detail.screen.LearnModuleScreen
+import app.translator.presentation.learn.list.screen.LearnSpanishScreen
+import app.translator.presentation.phrasebook.detail.screen.PhrasebookCategoryScreen
+import app.translator.presentation.phrasebook.list.screen.PhrasebookScreen
+import app.translator.presentation.settings.screen.SettingsScreen
+import app.translator.presentation.translator.screen.TranslatorScreen
+import app.translator.presentation.translator.component.BottomNavItem
 
 @Composable
 fun AppNavGraph(
@@ -21,7 +23,11 @@ fun AppNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Routes.Translator
+        startDestination = Routes.Translator,
+        enterTransition = { EnterTransition.None },
+        exitTransition = { ExitTransition.None },
+        popEnterTransition = { EnterTransition.None },
+        popExitTransition = { ExitTransition.None }
     ) {
         composable(Routes.Translator) {
             TranslatorScreen(

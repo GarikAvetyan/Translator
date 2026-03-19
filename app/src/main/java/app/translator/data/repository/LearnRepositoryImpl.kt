@@ -8,8 +8,9 @@ import app.translator.domain.model.LearnModule
 import app.translator.domain.model.ListenItem
 import app.translator.domain.model.VocabularyWord
 import app.translator.domain.repository.LearnRepository
+import javax.inject.Inject
 
-class LearnRepositoryImpl(
+class LearnRepositoryImpl @Inject constructor(
     private val localDataSource: LearnLocalDataSource
 ) : LearnRepository {
     override fun getLearnModules(): List<LearnModule> = localDataSource.getLearnModules()

@@ -1,27 +1,34 @@
 package app.translator.data.remote
 
+import app.translator.BuildConfig
 import kotlinx.serialization.json.Json
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import okhttp3.MediaType.Companion.toMediaType
+import java.util.concurrent.TimeUnit
 
 object RetrofitProvider {
-    private const val BASE_URL = "https://api.lecto.ai/"
-    private const val API_KEY = "GBRX4TJ-N234J54-M9SPZG3-S0CJM7X"
 
     fun create(): Retrofit {
         val logging = HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BASIC
+            level = if (BuildConfig.DEBUG) {
+                HttpLoggingInterceptor.Level.BODY
+            } else {
+                HttpLoggingInterceptor.Level.NONE
+            }
         }
 
         val client = OkHttpClient.Builder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
             .addInterceptor(logging)
             .addInterceptor { chain ->
                 val request = chain.request()
                     .newBuilder()
-                    .addHeader("X-API-Key", API_KEY)
+                    .addHeader("X-API-Key", BuildConfig.TRANSLATE_API_KEY)
                     .build()
                 chain.proceed(request)
             }
@@ -35,7 +42,7 @@ object RetrofitProvider {
         val contentType = "application/json".toMediaType()
 
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(BuildConfig.TRANSLATE_BASE_URL)
             .client(client)
             .addConverterFactory(json.asConverterFactory(contentType))
             .build()

@@ -31,6 +31,6 @@ data class PhraseCategory(
 )
 
 data class PhraseItem(
-    val spanish: String,
-    val english: String
+    @StringRes val spanishResId: Int,
+    @StringRes val englishResId: Int
 )

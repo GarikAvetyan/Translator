@@ -3,8 +3,9 @@ package app.translator.domain.usecase
 import app.translator.domain.repository.LanguagePreferencesRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
+import javax.inject.Inject
 
-class GetLanguagePairUseCase(
+class GetLanguagePairUseCase @Inject constructor(
     private val repository: LanguagePreferencesRepository
 ) {
     operator fun invoke(): Flow<LanguagePair> {

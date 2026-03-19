@@ -58,6 +58,12 @@
     <string name="exam_next">Next</string>
     <string name="exam_no_questions">No questions available</string>
     <string name="not_enough_coins">Not enough coins</string>
+    <string name="history">History</string>
+    <string name="select_language">Select Language</string>
+    <string name="locale_english">English</string>
+    <string name="locale_spanish">Español</string>
+
+    <!-- Phrasebook categories -->
     <string name="category_greetings">Greetings</string>
     <string name="category_everyday_phrases">Everyday Phrases</string>
     <string name="category_transport">Transport</string>
@@ -78,4 +84,232 @@
     <string name="category_excursions">Excursions</string>
     <string name="category_friendly_meeting">Friendly Meeting</string>
     <string name="category_post_office">In the Post Office</string>
+
+    <!-- Vocabulary words -->
+    <string name="vocab_hola">Hola</string>
+    <string name="vocab_hello">Hello</string>
+    <string name="vocab_gracias">Gracias</string>
+    <string name="vocab_thank_you">Thank you</string>
+    <string name="vocab_por_favor">Por favor</string>
+    <string name="vocab_please">Please</string>
+    <string name="vocab_buenos_dias">Buenos días</string>
+    <string name="vocab_good_morning">Good morning</string>
+    <string name="vocab_buenas_noches">Buenas noches</string>
+    <string name="vocab_good_night">Good night</string>
+    <string name="vocab_como_estas">¿Cómo estás?</string>
+    <string name="vocab_how_are_you">How are you?</string>
+    <string name="vocab_adios">Adiós</string>
+    <string name="vocab_goodbye">Goodbye</string>
+
+    <!-- Grammar lessons -->
+    <string name="grammar_ser_estar_title">Ser vs Estar</string>
+    <string name="grammar_ser_estar_explanation">Use ser for permanent traits and estar for temporary states.</string>
+    <string name="grammar_ser_estar_example">Ella es doctora. Ella está cansada.</string>
+    <string name="grammar_ar_verbs_title">Present Tense - AR Verbs</string>
+    <string name="grammar_ar_verbs_explanation">Remove -ar and add: o, as, a, amos, an.</string>
+    <string name="grammar_ar_verbs_example">Yo hablo, tú hablas, él habla.</string>
+    <string name="grammar_gender_title">Gender and Articles</string>
+    <string name="grammar_gender_explanation">Most nouns ending in -o are masculine, -a are feminine.</string>
+    <string name="grammar_gender_example">el libro, la mesa.</string>
+
+    <!-- Exam questions -->
+    <string name="exam_q1">How do you say \'Thank you\' in Spanish?</string>
+    <string name="exam_q1_opt1">Gracias</string>
+    <string name="exam_q1_opt2">Hola</string>
+    <string name="exam_q1_opt3">Adiós</string>
+    <string name="exam_q1_opt4">Por favor</string>
+    <string name="exam_q2">Choose the correct form: Yo ___ (hablar).</string>
+    <string name="exam_q2_opt1">hablo</string>
+    <string name="exam_q2_opt2">hablas</string>
+    <string name="exam_q2_opt3">habla</string>
+    <string name="exam_q2_opt4">hablan</string>
+    <string name="exam_q3">Translate: \'Good night\'</string>
+    <string name="exam_q3_opt1">Buenas noches</string>
+    <string name="exam_q3_opt2">Buenos días</string>
+    <string name="exam_q3_opt3">Buenas tardes</string>
+    <string name="exam_q3_opt4">Hasta luego</string>
+
+    <!-- Listen items -->
+    <string name="listen_donde_bano">¿Dónde está el baño?</string>
+    <string name="listen_where_bathroom">Where is the bathroom?</string>
+    <string name="listen_cuanto_cuesta">¿Cuánto cuesta?</string>
+    <string name="listen_how_much">How much does it cost?</string>
+    <string name="listen_necesito_ayuda">Necesito ayuda</string>
+    <string name="listen_need_help">I need help</string>
+    <string name="listen_puede_repetir">¿Puede repetir, por favor?</string>
+    <string name="listen_can_repeat">Can you repeat, please?</string>
+
+    <!-- Conversation phrases -->
+    <string name="conv_mucho_gusto">Mucho gusto</string>
+    <string name="conv_nice_to_meet">Nice to meet you</string>
+    <string name="conv_puede_ayudar">¿Me puede ayudar?</string>
+    <string name="conv_can_help">Can you help me?</string>
+    <string name="conv_buscando_hotel">Estoy buscando un hotel</string>
+    <string name="conv_looking_hotel">I am looking for a hotel</string>
+    <string name="conv_mesa_para_dos">Quiero una mesa para dos</string>
+    <string name="conv_table_for_two">I want a table for two</string>
+
+    <!-- Phrasebook phrases - Greetings -->
+    <string name="phrase_hola">Hola</string>
+    <string name="phrase_hello">Hello</string>
+    <string name="phrase_buenos_dias">Buenos días</string>
+    <string name="phrase_good_morning">Good morning</string>
+    <string name="phrase_buenas_tardes">Buenas tardes</string>
+    <string name="phrase_good_afternoon">Good afternoon</string>
+    <string name="phrase_buenas_noches">Buenas noches</string>
+    <string name="phrase_good_night">Good night</string>
+
+    <!-- Phrasebook phrases - Everyday -->
+    <string name="phrase_por_favor">Por favor</string>
+    <string name="phrase_please">Please</string>
+    <string name="phrase_gracias">Gracias</string>
+    <string name="phrase_thank_you">Thank you</string>
+    <string name="phrase_de_nada">De nada</string>
+    <string name="phrase_you_are_welcome">You are welcome</string>
+    <string name="phrase_perdon">Perdón</string>
+    <string name="phrase_sorry">Sorry</string>
+
+    <!-- Phrasebook phrases - Transport -->
+    <string name="phrase_necesito_taxi">Necesito un taxi</string>
+    <string name="phrase_need_taxi">I need a taxi</string>
+    <string name="phrase_donde_estacion">¿Dónde está la estación?</string>
+    <string name="phrase_where_station">Where is the station?</string>
+    <string name="phrase_billete_por_favor">Un billete, por favor</string>
+    <string name="phrase_ticket_please">A ticket, please</string>
+
+    <!-- Phrasebook phrases - Travels -->
+    <string name="phrase_quiero_viajar">Quiero viajar a…</string>
+    <string name="phrase_want_travel">I want to travel to…</string>
+    <string name="phrase_que_hora_sale">¿A qué hora sale?</string>
+    <string name="phrase_what_time_leave">What time does it leave?</string>
+    <string name="phrase_tengo_reserva">Tengo una reserva</string>
+    <string name="phrase_have_reservation">I have a reservation</string>
+
+    <!-- Phrasebook phrases - Hotels -->
+    <string name="phrase_tengo_reserva_hotel">Tengo una reserva</string>
+    <string name="phrase_have_reservation_hotel">I have a reservation</string>
+    <string name="phrase_necesito_habitacion">Necesito una habitación</string>
+    <string name="phrase_need_room">I need a room</string>
+    <string name="phrase_cuanto_por_noche">¿Cuánto cuesta por noche?</string>
+    <string name="phrase_how_much_night">How much per night?</string>
+
+    <!-- Phrasebook phrases - Restaurant -->
+    <string name="phrase_mesa_para_dos">Una mesa para dos</string>
+    <string name="phrase_table_for_two">A table for two</string>
+    <string name="phrase_la_cuenta">La cuenta, por favor</string>
+    <string name="phrase_the_bill">The bill, please</string>
+    <string name="phrase_que_recomienda">¿Qué recomienda?</string>
+    <string name="phrase_what_recommend">What do you recommend?</string>
+
+    <!-- Phrasebook phrases - Directions -->
+    <string name="phrase_donde_esta">¿Dónde está…?</string>
+    <string name="phrase_where_is">Where is…?</string>
+    <string name="phrase_como_llego">¿Cómo llego a…?</string>
+    <string name="phrase_how_get_to">How do I get to…?</string>
+    <string name="phrase_esta_cerca">¿Está cerca?</string>
+    <string name="phrase_is_near">Is it near?</string>
+
+    <!-- Phrasebook phrases - Health -->
+    <string name="phrase_necesito_medico">Necesito un médico</string>
+    <string name="phrase_need_doctor">I need a doctor</string>
+    <string name="phrase_me_duele">Me duele</string>
+    <string name="phrase_it_hurts">It hurts</string>
+    <string name="phrase_tengo_fiebre">Tengo fiebre</string>
+    <string name="phrase_have_fever">I have a fever</string>
+
+    <!-- Phrasebook phrases - Purchases -->
+    <string name="phrase_cuanto_cuesta">¿Cuánto cuesta?</string>
+    <string name="phrase_how_much_cost">How much does it cost?</string>
+    <string name="phrase_bajar_precio">¿Puede bajar el precio?</string>
+    <string name="phrase_lower_price">Can you lower the price?</string>
+    <string name="phrase_lo_llevo">Lo llevo</string>
+    <string name="phrase_will_take_it">I will take it</string>
+
+    <!-- Phrasebook phrases - Emergency -->
+    <string name="phrase_ayuda">¡Ayuda!</string>
+    <string name="phrase_help">Help!</string>
+    <string name="phrase_llame_policia">Llame a la policía</string>
+    <string name="phrase_call_police">Call the police</string>
+    <string name="phrase_es_emergencia">Es una emergencia</string>
+    <string name="phrase_its_emergency">It is an emergency</string>
+
+    <!-- Phrasebook phrases - Business -->
+    <string name="phrase_tengo_reunion">Tengo una reunión</string>
+    <string name="phrase_have_meeting">I have a meeting</string>
+    <string name="phrase_podemos_hablar">¿Podemos hablar?</string>
+    <string name="phrase_can_we_talk">Can we talk?</string>
+    <string name="phrase_envieme_correo">Envíeme un correo</string>
+    <string name="phrase_send_email">Send me an email</string>
+
+    <!-- Phrasebook phrases - Time and Date -->
+    <string name="phrase_que_hora_es">¿Qué hora es?</string>
+    <string name="phrase_what_time">What time is it?</string>
+    <string name="phrase_hoy">Hoy</string>
+    <string name="phrase_today">Today</string>
+    <string name="phrase_manana">Mañana</string>
+    <string name="phrase_tomorrow">Tomorrow</string>
+
+    <!-- Phrasebook phrases - Numbers -->
+    <string name="phrase_uno_dos_tres">Uno, dos, tres</string>
+    <string name="phrase_one_two_three">One, two, three</string>
+    <string name="phrase_diez">Diez</string>
+    <string name="phrase_ten">Ten</string>
+    <string name="phrase_cien">Cien</string>
+    <string name="phrase_one_hundred">One hundred</string>
+
+    <!-- Phrasebook phrases - Bank -->
+    <string name="phrase_cambiar_dinero">Necesito cambiar dinero</string>
+    <string name="phrase_exchange_money">I need to exchange money</string>
+    <string name="phrase_donde_banco">¿Dónde está el banco?</string>
+    <string name="phrase_where_bank">Where is the bank?</string>
+    <string name="phrase_retirar_dinero">Quiero retirar dinero</string>
+    <string name="phrase_withdraw_money">I want to withdraw money</string>
+
+    <!-- Phrasebook phrases - Sports -->
+    <string name="phrase_gusta_futbol">Me gusta el fútbol</string>
+    <string name="phrase_like_soccer">I like soccer</string>
+    <string name="phrase_vamos_estadio">Vamos al estadio</string>
+    <string name="phrase_go_stadium">Let\'s go to the stadium</string>
+    <string name="phrase_que_equipo">¿Qué equipo?</string>
+    <string name="phrase_which_team">Which team?</string>
+
+    <!-- Phrasebook phrases - Beauty Salon -->
+    <string name="phrase_corte_pelo">Necesito un corte de pelo</string>
+    <string name="phrase_need_haircut">I need a haircut</string>
+    <string name="phrase_solo_puntas">Solo las puntas</string>
+    <string name="phrase_just_ends">Just the ends</string>
+    <string name="phrase_no_muy_corto">No muy corto</string>
+    <string name="phrase_not_too_short">Not too short</string>
+
+    <!-- Phrasebook phrases - Family -->
+    <string name="phrase_mi_familia">Mi familia</string>
+    <string name="phrase_my_family">My family</string>
+    <string name="phrase_tengo_hermanos">Tengo dos hermanos</string>
+    <string name="phrase_have_brothers">I have two brothers</string>
+    <string name="phrase_esta_mi_madre">Esta es mi madre</string>
+    <string name="phrase_this_mother">This is my mother</string>
+
+    <!-- Phrasebook phrases - Excursions -->
+    <string name="phrase_quiero_excursion">Quiero hacer una excursión</string>
+    <string name="phrase_want_excursion">I want to take an excursion</string>
+    <string name="phrase_hay_guia">¿Hay un guía?</string>
+    <string name="phrase_is_guide">Is there a guide?</string>
+    <string name="phrase_cuanto_dura">¿Cuánto dura?</string>
+    <string name="phrase_how_long">How long does it take?</string>
+
+    <!-- Phrasebook phrases - Friendly Meeting -->
+    <string name="phrase_nos_vemos">Nos vemos luego</string>
+    <string name="phrase_see_you">See you later</string>
+    <string name="phrase_tomar_cafe">Vamos a tomar un café</string>
+    <string name="phrase_have_coffee">Let\'s have a coffee</string>
+    <string name="phrase_que_tal_dia">¿Qué tal tu día?</string>
+    <string name="phrase_how_was_day">How was your day?</string>
+
+    <!-- Phrasebook phrases - Post Office -->
+    <string name="phrase_enviar_carta">Quiero enviar una carta</string>
+    <string name="phrase_send_letter">I want to send a letter</string>
+    <string name="phrase_cuanto_envio">¿Cuánto cuesta el envío?</string>
+    <string name="phrase_how_much_shipping">How much is shipping?</string>
+    <string name="phrase_necesito_sello">Necesito un sello</string>
+    <string name="phrase_need_stamp">I need a stamp</string>
 </resources>

@@ -1,5 +1,5 @@
 package app.translator.core_res.ui.base
 
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 
-open class BaseActivity : ComponentActivity()
+open class BaseActivity : AppCompatActivity()

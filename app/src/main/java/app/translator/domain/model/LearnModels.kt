@@ -16,28 +16,28 @@ data class LearnModule(
 )
 
 data class VocabularyWord(
-    val spanish: String,
-    val english: String
+    @StringRes val spanishResId: Int,
+    @StringRes val englishResId: Int
 )
 
 data class GrammarLesson(
-    val title: String,
-    val explanation: String,
-    val example: String
+    @StringRes val titleResId: Int,
+    @StringRes val explanationResId: Int,
+    @StringRes val exampleResId: Int
 )
 
 data class ExamQuestion(
-    val question: String,
-    val options: List<String>,
+    @StringRes val questionResId: Int,
+    val optionResIds: List<Int>,
     val correctIndex: Int
 )
 
 data class ListenItem(
-    val spanish: String,
-    val english: String
+    @StringRes val spanishResId: Int,
+    @StringRes val englishResId: Int
 )
 
 data class ConversationPhrase(
-    val spanish: String,
-    val english: String
+    @StringRes val spanishResId: Int,
+    @StringRes val englishResId: Int
 )

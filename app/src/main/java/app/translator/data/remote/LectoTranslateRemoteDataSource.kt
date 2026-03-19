@@ -1,6 +1,8 @@
 package app.translator.data.remote
 
-class LectoTranslateRemoteDataSource(
+import javax.inject.Inject
+
+class LectoTranslateRemoteDataSource @Inject constructor(
     private val api: LectoTranslateApiService
 ) {
     suspend fun translate(text: String, source: String, target: String): TranslateResponse {

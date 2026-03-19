@@ -1,5 +1,6 @@
 package app.translator.domain.model
 
-data class TranslationResult(
-    val translatedText: String
-)
+sealed interface TranslationResult {
+    data class Success(val translatedText: String) : TranslationResult
+    data class Error(val exception: Throwable) : TranslationResult
+}
