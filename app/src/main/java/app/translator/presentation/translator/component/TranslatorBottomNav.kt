@@ -27,7 +27,6 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import app.translator.core_res.R
-import app.translator.core_res.ui.theme.White
 import app.translator.presentation.navigation.Routes
 
 enum class BottomNavItem(
@@ -47,7 +46,7 @@ fun TranslatorBottomNav(
 ) {
     Column {
         HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
-        NavigationBar(containerColor = White) {
+        NavigationBar(containerColor = MaterialTheme.colorScheme.surface) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceAround,

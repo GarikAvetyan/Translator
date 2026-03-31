@@ -48,7 +48,6 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.sp
 import app.translator.core_res.R
-import app.translator.core_res.ui.theme.White
 import app.translator.presentation.common.component.AudioActionState
 
 @Composable
@@ -62,7 +61,7 @@ internal fun InputCard(
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(dimensionResource(R.dimen._16dp)),
-        colors = CardDefaults.cardColors(containerColor = White)
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
     ) {
         Column(
             modifier = Modifier.padding(all = dimensionResource(R.dimen._4dp)),
@@ -77,13 +76,13 @@ internal fun InputCard(
                     onClick = onClear,
                     enabled = hasText,
                     modifier = Modifier
-                        .size(dimensionResource(R.dimen._32dp))
+                        .size(dimensionResource(R.dimen._40dp))
                         .alpha(if (hasText) 1f else 0f)
                 ) {
                     Icon(
                         imageVector = Icons.Default.Close,
                         contentDescription = stringResource(R.string.clear_action),
-                        modifier = Modifier.size(dimensionResource(R.dimen._22dp))
+                        modifier = Modifier.size(dimensionResource(R.dimen._28dp))
                     )
                 }
             }
@@ -137,7 +136,7 @@ internal fun OutputCard(
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(dimensionResource(R.dimen._16dp)),
-        colors = CardDefaults.cardColors(containerColor = White),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         elevation = CardDefaults.cardElevation(defaultElevation = dimensionResource(R.dimen._4dp))
     ) {
         Column(

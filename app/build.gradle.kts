@@ -19,7 +19,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "TRANSLATE_API_KEY", "\"PRDHPCP-FNE499G-KWSSCW1-T1RRTZY\"")
+        buildConfigField("String", "TRANSLATE_API_KEY", "\"5BNXG19-B2DM9V2-Q0GW108-P8GMG0Y\"")
         buildConfigField("String", "TRANSLATE_BASE_URL", "\"https://api.lecto.ai/\"")
     }
 

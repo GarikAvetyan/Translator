@@ -78,8 +78,8 @@ fun CoinsChip(coinBalance: Int) {
                 RoundedCornerShape(dimensionResource(R.dimen._20dp))
             )
             .padding(
-                horizontal = dimensionResource(R.dimen._10dp),
-                vertical = dimensionResource(R.dimen._6dp)
+                horizontal = dimensionResource(R.dimen._12dp),
+                vertical = dimensionResource(R.dimen._8dp)
             ),
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -87,12 +87,12 @@ fun CoinsChip(coinBalance: Int) {
             imageVector = Icons.Default.MonetizationOn,
             contentDescription = null,
             tint = Color.White,
-            modifier = Modifier.size(dimensionResource(R.dimen._16dp))
+            modifier = Modifier.size(dimensionResource(R.dimen._20dp))
         )
         Text(
             text = stringResource(R.string.coins_format, coinBalance),
             color = Color.White,
-            style = MaterialTheme.typography.labelMedium,
+            style = MaterialTheme.typography.labelLarge,
             modifier = Modifier.padding(start = dimensionResource(R.dimen._6dp))
         )
     }

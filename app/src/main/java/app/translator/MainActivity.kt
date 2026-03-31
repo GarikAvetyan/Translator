@@ -15,7 +15,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            TranslatorTheme(dynamicColor = false) {
+            TranslatorTheme {
                 val navController = rememberNavController()
                 AppNavGraph(navController = navController)
             }

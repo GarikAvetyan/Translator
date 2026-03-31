@@ -42,21 +42,21 @@ internal fun TranslatorTopBar(
                 Icon(
                     imageVector = Icons.Default.StarBorder,
                     contentDescription = stringResource(R.string.favorite),
-                    modifier = Modifier.size(dimensionResource(R.dimen._22dp))
+                    modifier = Modifier.size(dimensionResource(R.dimen._28dp))
                 )
             }
             IconButton(onClick = onHistoryClick) {
                 Icon(
                     imageVector = Icons.Default.History,
                     contentDescription = stringResource(R.string.history),
-                    modifier = Modifier.size(dimensionResource(R.dimen._22dp))
+                    modifier = Modifier.size(dimensionResource(R.dimen._28dp))
                 )
             }
             IconButton(onClick = onSettingsClick) {
                 Icon(
                     imageVector = Icons.Default.Settings,
                     contentDescription = stringResource(R.string.settings),
-                    modifier = Modifier.size(dimensionResource(R.dimen._22dp))
+                    modifier = Modifier.size(dimensionResource(R.dimen._28dp))
                 )
             }
             CoinsChip(coinBalance = coinBalance)

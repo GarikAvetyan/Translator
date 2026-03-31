@@ -15,9 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
-import androidx.compose.ui.text.font.FontWeight
 import app.translator.core_res.R
-import app.translator.core_res.ui.theme.White
 
 @Composable
 fun PhraseRowCard(
@@ -32,7 +30,7 @@ fun PhraseRowCard(
             .fillMaxWidth()
             .wrapContentHeight(),
         shape = RoundedCornerShape(dimensionResource(R.dimen._12dp)),
-        colors = CardDefaults.cardColors(containerColor = White),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         elevation = CardDefaults.cardElevation(defaultElevation = dimensionResource(R.dimen._2dp))
     ) {
         Row(
@@ -48,13 +46,12 @@ fun PhraseRowCard(
             ) {
                 Text(
                     text = title,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.SemiBold,
+                    style = MaterialTheme.typography.titleLarge,
                     color = MaterialTheme.colorScheme.onSurface
                 )
                 Text(
                     text = subtitle,
-                    style = MaterialTheme.typography.bodySmall,
+                    style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }

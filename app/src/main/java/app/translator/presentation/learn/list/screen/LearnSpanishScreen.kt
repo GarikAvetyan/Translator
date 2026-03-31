@@ -43,7 +43,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.translator.core_res.R
-import app.translator.core_res.ui.theme.White
 import app.translator.domain.model.LearnModule
 import app.translator.domain.model.LearnModuleType
 import app.translator.presentation.common.component.AppTopBar
@@ -150,10 +149,10 @@ private fun LearnModuleCard(
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .height(dimensionResource(R.dimen._64dp))
+            .height(dimensionResource(R.dimen._72dp))
             .clickable(onClick = onClick),
         shape = RoundedCornerShape(dimensionResource(R.dimen._12dp)),
-        colors = CardDefaults.cardColors(containerColor = White),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         elevation = CardDefaults.cardElevation(defaultElevation = dimensionResource(R.dimen._2dp))
     ) {
         Row(
@@ -171,8 +170,7 @@ private fun LearnModuleCard(
                 ) {
                     Text(
                         text = stringResource(module.titleResId),
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.Bold,
+                        style = MaterialTheme.typography.titleLarge,
                         color = MaterialTheme.colorScheme.onSurface
                     )
                     if (isLocked) {
@@ -180,7 +178,7 @@ private fun LearnModuleCard(
                             imageVector = Icons.Default.Lock,
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.size(dimensionResource(R.dimen._16dp))
+                            modifier = Modifier.size(dimensionResource(R.dimen._20dp))
                         )
                     }
                 }
@@ -193,19 +191,20 @@ private fun LearnModuleCard(
                             imageVector = Icons.Default.MonetizationOn,
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.tertiary,
-                            modifier = Modifier.size(dimensionResource(R.dimen._14dp))
+                            modifier = Modifier.size(dimensionResource(R.dimen._20dp))
                         )
                         Text(
                             text = cost.toString(),
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.onSurface
                         )
                     }
                 }
             }
             Box(
                 modifier = Modifier
-                    .size(dimensionResource(R.dimen._44dp))
+                    .size(dimensionResource(R.dimen._48dp))
                     .background(
                         color = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
                         shape = CircleShape

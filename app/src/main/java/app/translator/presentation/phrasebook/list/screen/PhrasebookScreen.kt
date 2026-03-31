@@ -44,7 +44,6 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.translator.core_res.R
-import app.translator.core_res.ui.theme.White
 import app.translator.domain.model.PhraseCategoryType
 import app.translator.presentation.common.component.AppTopBar
 import app.translator.presentation.common.component.ListItemCard
@@ -110,8 +109,8 @@ fun PhrasebookScreen(
                 },
                 shape = RoundedCornerShape(dimensionResource(R.dimen._12dp)),
                 colors = TextFieldDefaults.colors(
-                    focusedContainerColor = White,
-                    unfocusedContainerColor = White
+                    focusedContainerColor = MaterialTheme.colorScheme.surface,
+                    unfocusedContainerColor = MaterialTheme.colorScheme.surface
                 )
             )
 

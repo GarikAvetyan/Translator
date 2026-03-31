@@ -6,11 +6,10 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
@@ -25,7 +24,6 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.font.FontWeight
 import app.translator.core_res.R
-import app.translator.core_res.ui.theme.White
 
 @Composable
 fun ListItemCard(
@@ -39,17 +37,19 @@ fun ListItemCard(
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .height(dimensionResource(R.dimen._64dp))
+            .wrapContentHeight()
             .clickable(onClick = onClick),
         shape = RoundedCornerShape(dimensionResource(R.dimen._12dp)),
-        colors = CardDefaults.cardColors(containerColor = White),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         elevation = CardDefaults.cardElevation(defaultElevation = dimensionResource(R.dimen._2dp))
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .fillMaxHeight()
-                .padding(horizontal = dimensionResource(R.dimen._16dp)),
+                .padding(
+                    horizontal = dimensionResource(R.dimen._16dp),
+                    vertical = dimensionResource(R.dimen._14dp)
+                ),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
@@ -62,29 +62,26 @@ fun ListItemCard(
                     contentDescription = title,
                     tint = MaterialTheme.colorScheme.primary,
                     modifier = Modifier
-                        .size(dimensionResource(R.dimen._36dp))
+                        .size(dimensionResource(R.dimen._44dp))
                         .background(
                             MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
                             CircleShape
                         )
-                        .padding(dimensionResource(R.dimen._6dp))
+                        .padding(dimensionResource(R.dimen._8dp))
                 )
                 Spacer(modifier = Modifier.size(dimensionResource(R.dimen._12dp)))
-                Column(
-                    modifier = Modifier.fillMaxHeight(),
-                    verticalArrangement = Arrangement.Center
-                ) {
+                Column(verticalArrangement = Arrangement.Center) {
                     Text(
                         text = title,
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.SemiBold,
+                        style = MaterialTheme.typography.titleLarge,
                         color = MaterialTheme.colorScheme.onSurface
                     )
                     if (subtitle != null) {
                         Text(
                             text = subtitle,
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = FontWeight.Medium,
+                            color = MaterialTheme.colorScheme.primary
                         )
                     }
                 }
